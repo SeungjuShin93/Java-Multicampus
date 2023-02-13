@@ -1,0 +1,5 @@
+package Enum;
+
+public enum B_Day {
+	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
