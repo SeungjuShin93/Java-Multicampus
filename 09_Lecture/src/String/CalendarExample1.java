@@ -2,22 +2,21 @@ package String;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-//import java.util.TimeZone;
+// import java.util.TimeZone;
 
 public class CalendarExample1 {
-	public static void main(String args[]) {
-		GregorianCalendar calendar = new GregorianCalendar();
-//		TimeZone timeZone = TimeZone.getTimeZone("Europe/London");
-//		calendar.setTimeZone(timeZone);
-		int year = calendar.get(Calendar.YEAR);
-		int month = calendar.get(Calendar.MONTH) + 1;
-		int date = calendar.get(Calendar.DATE);
-		int amPm = calendar.get(Calendar.AM_PM);
-		int hour = calendar.get(Calendar.HOUR);
-		int min = calendar.get(Calendar.MINUTE);
-		int sec = calendar.get(Calendar.SECOND);
-		String sAmPm = amPm == Calendar.AM ? "¿ÀÀü" : "¿ÀÈÄ";
-		System.out.printf("%d³â %d¿ù %dÀÏ %s %d½Ã %dºÐ %dÃÊ",
-				year, month, date, sAmPm, hour, min, sec);
-	}
+  public static void main(String args[]) {
+    GregorianCalendar calendar = new GregorianCalendar();
+    // TimeZone timeZone = TimeZone.getTimeZone("Europe/London");
+    // calendar.setTimeZone(timeZone);
+    int year = calendar.get(Calendar.YEAR);
+    int month = calendar.get(Calendar.MONTH) + 1;
+    int date = calendar.get(Calendar.DATE);
+    int amPm = calendar.get(Calendar.AM_PM);
+    int hour = calendar.get(Calendar.HOUR);
+    int min = calendar.get(Calendar.MINUTE);
+    int sec = calendar.get(Calendar.SECOND);
+    String sAmPm = amPm == Calendar.AM ? "ï¿½ï¿½ï¿½ï¿½" : "ï¿½ï¿½ï¿½ï¿½";
+    System.out.printf("%dï¿½ï¿½ %dï¿½ï¿½ %dï¿½ï¿½ %s %dï¿½ï¿½ %dï¿½ï¿½ %dï¿½ï¿½", year, month, date, sAmPm, hour, min, sec);
+  }
 }
